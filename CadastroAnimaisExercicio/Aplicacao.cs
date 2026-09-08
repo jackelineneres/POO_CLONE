@@ -1,5 +1,7 @@
 namespace CadastroAnimaisExercicio;
 using CadastroAnimaisExercicio.Entidades;
+
+//repositorio POO_CLONE Jackeline
 public class Aplicacao
 {
     public void Executar()
