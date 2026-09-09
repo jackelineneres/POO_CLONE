@@ -2,16 +2,17 @@ namespace PooPedidos.Entidades;
 
 public class ItemPedido
 {
+   
+    public Produto Produto { get; set; } = null!;
+    public int Qtd { get; set; }
+    public decimal Valor { get; set; }
+
     public ItemPedido(Produto produto, int qtd, decimal valor)
     {
         Produto = produto;
         Qtd = qtd;
         Valor = valor;
     }
-    public Produto Produto { get; set; } = null!;
-    public int Qtd { get; set; }
-    public decimal Valor { get; set; }
-
     public decimal ValorTotal => Qtd * Valor;
 
     public override string ToString() =>

@@ -2,6 +2,12 @@ namespace PooPedidos.Entidades;
 
 public class Produto
 {
+    public int Id { get; set; }
+    public string Nome { get; set; } = string.Empty;
+    private decimal Preco { get; set; }
+    public string Descricao { get; set; } = string.Empty;
+    private int Quantidade { get; set; }
+
     public Produto(int id, string nome, decimal preco, string descricao, int quantidade)
     {
         Id = id;
@@ -10,11 +16,6 @@ public class Produto
         Descricao = descricao;
         Quantidade = quantidade;
     }
-    public int Id { get; set; }
-    public string Nome { get; set; } = string.Empty;
-    private decimal Preco { get; set; }
-    public string Descricao { get; set; } = string.Empty;
-    private int Quantidade { get; set; }
     public override string ToString() =>
         $"Produto #{Id}: {Nome}\n" +
         $"  Preço: R$ {Preco:F2}\n" +
