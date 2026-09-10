@@ -16,6 +16,24 @@ public class Cliente
         Telefone = telefone;
         Endereco = endereco;
     }
+
+    public Boolean ValidarDados(ref string mensagem)
+    {
+        if (Nome.Length < 3)
+        {
+
+        }
+    }
+
+    public bool ValidarCliente(string mensagem)
+    {   
+        if (Nome Length <=3)
+        {
+            mensagem = "Nome do cliente deve ter mais de 3 caracteres.";
+            return false;
+        }
+        return true;
+    }
     public override string ToString() => 
         $"Cliente #{Id}: {Nome}\n" +
         $"  Email: {Email}\n" +

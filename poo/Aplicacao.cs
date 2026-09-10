@@ -68,6 +68,8 @@ public class Aplicacao
             LerTexto("Telefone: "),
             LerTexto("Endereço: ", "")
         );
+
+        if (cliente.ValidarDados())
         _clientes.Add(cliente);
         Mensagem("Cliente cadastrado.");
     }
