@@ -2,7 +2,7 @@ using System.Globalization;
 using PooPedidos.Entidades;
 
 namespace PooPedidos;
-
+//teste teste 
 public class Aplicacao
 {
     private readonly List<Cliente> _clientes = [];
